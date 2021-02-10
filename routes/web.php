@@ -17,6 +17,6 @@ $router->get('/', function () use ($router) {
     return $router->app->version();
 });
 
-$router->post('/register', 'AuthController@register');
-$router->post('/login', 'AuthController@login');
-$router->get('/user/{id}', 'UserController@show');
+$router->post('/registers', 'AuthController@register');
+$router->post('/logins', 'AuthController@login');
+$router->get('/user/{ids}', 'UserController@show');
